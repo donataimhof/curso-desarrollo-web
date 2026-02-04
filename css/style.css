@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "TikTok Sans", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: "Zalando Sans SemiExpanded", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #283484;
+}
+
+p {
+  line-height: 1.6;
+  margin: 20px 0;
+  align-content: justify;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+}
+
+header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  vertical-align: middle;
+  font-family: "Zalando Sans Expanded", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #283484;
+}
+header img {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+header nav {
+  margin-right: 20px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+header nav ul a {
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000000;
+}
+footer adress {
+  font-style: normal;
+  line-height: 1.6;
+}
+footer adress a {
+  text-decoration: underline;
+  color: #283484;
+}
+footer adress a[href^="mailto:"] {
+  color: #283484;
+}
+
+.introduccion {
+  padding: 20px;
+  background-size: cover;
+  background-position: center top;
+  background-image: url("../img/logoMit.jpeg");
+  height: auto;
+}
+
+.servicios {
+  padding: 20px;
+  background-color: #283484;
+  color: #ffffff;
+}
+.servicios li {
+  margin: 10px 0;
+  list-style: disc;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.equipo {
+  padding: 20px;
+  background-color: #b4bbe6;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "titulo titulo titulo" "descripcion descripcion descripcion" "miembro1 miembro2 miembro3";
+  gap: 20px;
+}
+.equipo .equipo-titulo {
+  grid-area: titulo;
+  text-align: center;
+}
+.equipo .equipo-descripcion {
+  grid-area: descripcion;
+  text-align: center;
+  margin-bottom: 0;
+}
+.equipo div {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.equipo div img {
+  width: 150px;
+  border-radius: 8px;
+  margin: 10px 0;
+  justify-content: center;
+}
+.equipo div h3 {
+  margin-bottom: 5px;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: italic;
+  color: #000000;
+}
+.equipo div p {
+  margin-left: 20px;
+  text-align: justify;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000000;
+}
+.equipo .miembro1 {
+  grid-area: miembro1;
+  flex-direction: column;
+  text-align: center;
+}
+.equipo .miembro2 {
+  grid-area: miembro2;
+  flex-direction: column;
+  text-align: center;
+}
+.equipo .miembro3 {
+  grid-area: miembro3;
+  flex-direction: column;
+  text-align: center;
+}
+
+.ubicacion {
+  padding: 20px;
+  background-color: #283484;
+  color: #ffffff;
+}
+.ubicacion iframe {
+  height: 300px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+}
+.ubicacion figcaption {
+  text-align: center;
+  font-family: "TikTok Sans", sans-serif;
+}
+
+.turnos {
+  padding: 20px;
+  background-color: #283484;
+  color: #ffffff;
+}
+.turnos h2 {
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.turnos form label {
+  display: block;
+  font-family: "Zalando Sans Expanded", sans-serif;
+}
+.turnos form input[type=submit] {
+  background-color: #ffffff;
+  border: outset 2px #000000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "TikTok Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+.turnos input,
+.turnos select,
+.turnos textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 8px;
+  }
+  header h1 {
+    font-size: 1rem;
+  }
+  header header img {
+    width: 50px;
+    margin-right: 5px;
+  }
+  header ul {
+    gap: 5px;
+  }
+  header ul a {
+    font-size: 0.8rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  .introduccion {
+    padding: 10px;
+  }
+  .servicios {
+    padding: 10px;
+  }
+  .servicios li {
+    font-size: 0.95rem;
+    margin: 5px 0;
+  }
+  .turnos {
+    padding: 10px;
+  }
+  .turnos h2 {
+    font-size: 1.1rem;
+  }
+  .turnos input[type=submit] {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .turnos input,
+  .turnos select,
+  .turnos textarea {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+  .ubicacion {
+    padding: 10px;
+  }
+  .ubicacion iframe {
+    height: 200px;
+  }
+  .ubicacion figcaption {
+    font-size: 0.85rem;
+  }
+  .equipo {
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas: "titulo" "descripcion" "miembro1" "miembro2" "miembro3";
+  }
+  .equipo img {
+    width: 100px;
+  }
+  .equipo h3 {
+    font-size: 1rem;
+  }
+  .equipo p {
+    font-size: 0.85rem;
+  }
+  footer {
+    padding: 10px 5px;
+    font-size: 0.85rem;
+  }
+  footer address {
+    line-height: 1.4;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

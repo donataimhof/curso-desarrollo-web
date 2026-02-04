@@ -1,0 +1,118 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px;
+
+        h1 {
+            font-size: 1rem;
+        }
+
+        header img {
+            width: 50px;
+            margin-right: 5px;
+        }
+
+        ul {
+            gap: 5px;
+
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+
+    .introduccion {
+        padding: 10px;
+    }
+
+    .servicios {
+        padding: 10px;
+
+        li {
+            font-size: 0.95rem;
+            margin: 5px 0;
+        }
+    }
+
+    .turnos {
+        padding: 10px;
+
+        h2 {
+            font-size: 1.1rem;
+        }
+
+        input[type="submit"] {
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            width: 100%;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+    }
+
+    .ubicacion {
+        padding: 10px;
+
+        iframe {
+            height: 200px;
+        }
+
+        figcaption {
+            font-size: 0.85rem;
+        }
+    }
+
+    .equipo {
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "titulo"
+            "descripcion"
+            "miembro1"
+            "miembro2"
+            "miembro3";
+
+        img {
+            width: 100px;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+
+    }
+
+    footer {
+        padding: 10px 5px;
+        font-size: 0.85rem;
+
+        address {
+            line-height: 1.4;
+        }
+    }
+}

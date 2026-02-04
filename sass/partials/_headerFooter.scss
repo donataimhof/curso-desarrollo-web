@@ -1,0 +1,61 @@
+@use "./variables" as*;
+@use "./mixin" as*;
+
+header {
+    background-color: $blanco;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    @include flex(row, space-between, center);
+
+    h1 {
+        vertical-align: middle;
+        @include font($font2, 1.5rem, bold, $azul);
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+
+    nav {
+        margin-right: 20px;
+
+        ul {
+            @include flex(row, space-around, center);
+            gap: 20px;
+            list-style: none;
+
+            a {
+                @include font($font1, 1rem, bold, $negro);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $blanco;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    @include font($font1, 1rem, normal, $negro);
+
+    adress {
+        font-style: normal;
+        line-height: 1.6;
+
+        a {
+            text-decoration: underline;
+            color: $azul;
+        }
+
+        a[href^="mailto:"] {
+            color: $azul;
+        }
+    }
+}

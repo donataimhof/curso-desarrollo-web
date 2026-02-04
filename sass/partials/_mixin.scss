@@ -1,0 +1,26 @@
+@mixin grid1($area, $align) {
+    grid-area: $area;
+    text-align: $align;
+}
+
+@mixin gridMiembro($area, $flexDir, $textAlign) {
+    grid-area: $area;
+    flex-direction: $flexDir;
+    text-align: $textAlign;
+
+}
+
+@mixin font($fontFamily, $fontSize, $fontWeight, $color) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+}
+
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

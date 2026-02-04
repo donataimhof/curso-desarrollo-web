@@ -1,0 +1,22 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.introduccion {
+    padding: 20px;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../img/logoMit.jpeg');
+    height: auto;
+}
+
+.servicios {
+    padding: 20px;
+    background-color: $azul;
+    color: $blanco;
+
+    li {
+        margin: 10px 0;
+        list-style: disc;
+        @include font($font1, 1.2rem, normal, $blanco);
+    }
+}

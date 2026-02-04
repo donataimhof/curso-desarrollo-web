@@ -1,0 +1,59 @@
+@use "./variables" as*;
+@use "./mixin" as*;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: $font1;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: $font2;
+    color: $blanco;
+    text-decoration: underline;
+}
+
+h2 {
+    @include font($font3, 1.5rem, bold, $azul);
+}
+
+p {
+    line-height: 1.6;
+    margin: 20px 0;
+    align-content: justify;
+    @include font($font1, 1.2rem, bold, $negro);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    @include flex(row, center, center);
+    font-size: 30px;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+}

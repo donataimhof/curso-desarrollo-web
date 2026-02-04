@@ -1,0 +1,37 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
+.turnos {
+    padding: 20px;
+    background-color: $azul;
+    color: $blanco;
+
+    h2 {
+        @include font($font1, 1.5rem, bold, $blanco);
+    }
+
+    form {
+        label {
+            display: block;
+            font-family: $font2;
+        }
+
+        input[type="submit"] {
+            background-color: $blanco;
+            border: outset 2px $negro;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            @include font($font1, 1rem, bold, $negro);
+        }
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 8px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 4px;
+    }
+}

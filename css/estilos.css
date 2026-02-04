@@ -253,9 +253,6 @@ footer {
     font-size: 1rem;
 }
 
-footer a {
-    color: #283484;
-}
 
 footer address {
     font-style: normal;
@@ -322,6 +319,10 @@ footer address a {
         padding: 10px;
     }
 
+    .turnos h2 {
+        font-size: 1.1rem;
+    }
+
     .turnos input,
     .turnos select,
     .turnos textarea {
@@ -329,9 +330,7 @@ footer address a {
         font-size: 0.9rem;
     }
 
-    .turnos h2 {
-        font-size: 1.1rem;
-    }
+
 
     .turnos input[type="submit"] {
         padding: 8px 15px;
