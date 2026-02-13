@@ -37,7 +37,22 @@
     }
 
     .introduccion {
-        padding: 10px;
+        padding: 15px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+        }
     }
 
     .servicios {

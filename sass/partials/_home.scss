@@ -2,11 +2,40 @@
 @use "./mixin" as *;
 
 .introduccion {
-    padding: 20px;
+    padding: 40px 20px;
     background-size: cover;
     background-position: center top;
-    background-image: url('../img/logoMit.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/logoMit.jpeg');
     height: auto;
+    color: $blanco;
+
+    h2 {
+        color: $blanco;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        color: $celeste;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $blanco;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        line-height: 1.6;
+        margin-bottom: 15px;
+
+        &.frase {
+            font-weight: 600;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-top: 20px;
+        }
+    }
 }
 
 .servicios {

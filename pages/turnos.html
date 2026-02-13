@@ -22,7 +22,6 @@
 <body>
     <header>
         <h1>Videoendoscopia Digestiva</h1>
-        <br>
         <img src="../img/logo.png" alt="">
         <nav class="navbar navbar-expand-lg bg-body-white">
             <div class="container-fluid">
@@ -42,12 +41,10 @@
     </header>
     <main>
         <section class="turnos">
-            <h1>turnos</h1>
-            <br>
-            <h2>Solicita tu turno para una consulta o procedimiento de Videoendoscopia Digestiva completando el
+            <h2>turnos</h2>
+            <h3>Solicita tu turno para una consulta o procedimiento de Videoendoscopia Digestiva completando el
                 siguiente formulario. Nuestro equipo se pondrá en contacto contigo para confirmar los detalles y
-                brindarte toda la información necesaria.</h2>
-            <br>
+                brindarte toda la información necesaria.</h3>
             <form action="submit" method="post">
                 <label for="name">Nombre completo:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
@@ -57,7 +54,12 @@
                 <input type="date" id="date" name="date" required><br><br>
                 <label for="time">Hora del turno:</label><br>
                 <input type="time" id="time" name="time" required><br><br>
-                <input type="submit" value="Solicitar Turno">
+                <a class="fancy" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">Solicitar Turno</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
             </form>
         </section>
     </main>
