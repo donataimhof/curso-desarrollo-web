@@ -1,21 +1,18 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
-/* página entera azul para eliminar el blanco alrededor */
-.turnos-page {
-    background-color: $azul;
-}
-
 .turnos {
+    width: 100%;
     padding: 20px;
     background-color: $azul;
     color: $blanco;
-    max-width: 800px;
     margin: 0 auto;
-    min-height: 60vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 
     h2 {
         @include font($font1, 1.5rem, bold, $blanco);
@@ -29,6 +26,9 @@
     }
 
     form {
+        width: 100%;
+        max-width: 600px;
+
         label {
             display: block;
             font-family: $font2;
