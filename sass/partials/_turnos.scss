@@ -1,25 +1,39 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
+/* página entera azul para eliminar el blanco alrededor */
+.turnos-page {
+    background-color: $azul;
+}
+
 .turnos {
     padding: 20px;
     background-color: $azul;
     color: $blanco;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h2 {
         @include font($font1, 1.5rem, bold, $blanco);
         text-transform: uppercase;
+        margin-bottom: 0.5rem;
     }
 
     h3 {
         @include font($font1, 1.2rem, normal, $blanco);
-
+        margin-bottom: 20px;
     }
 
     form {
         label {
             display: block;
             font-family: $font2;
+            margin-bottom: 4px;
+            @include font($font2, 1.1rem, bold, $blanco);
         }
 
         input[type="submit"] {
@@ -35,8 +49,10 @@
     input,
     select,
     textarea {
+        display: block;
+        width: 100%;
         padding: 8px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         border: none;
         border-radius: 4px;
     }
@@ -76,6 +92,7 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $blanco;
+            font-weight: bold;
         }
 
         .top-key {
